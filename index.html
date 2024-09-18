@@ -1,15 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio de Diego Benitez</title>
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <div>
-        <h1>Hola Soy Diego Benitez</h1> 
-        <h2>Desarrollador Backend</h2>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+<section id="hero">
+    <div class="hero-content">
+        <img src="imagenes/foto.jpeg" alt="Foto de Diego Benitez" class="hero-img">
+        <div class="hero-text">
+            <h1>Hola, soy Diego Benitez</h1>
+            <p>Desarrollador Backend.</p>
+        </div>
     </div>
+</section>
+
+
+
+    <section id="about">
+        <h2>Sobre mí</h2>
+        <p>Soy Diego Ezequiel Benitez, estudiante avanzado de Programación en UTN. Tengo experiencia en C++, C#, .NET, SQL Server y Linux, con proyectos que incluyen desarrollo de juegos y sistemas de gestión. Actualmente, doy clases de programación a niños y busco mi primera oportunidad en el mundo IT para seguir aprendiendo y crecer profesionalmente.</p>
+    </section>
+
+
+    <section id="projects">
+        <h2>Proyectos</h2>
+        
+        <div class="project">
+            <h3>ITBANK</h3>
+            <p>Página web para "ITBANK". Simulación de Homebanking.</p>
+            <video controls width="500">
+                <source src="videos/videoItbank.mp4" type="video/mp4">
+            </video>
+            <p><a href="https://github.com/Federexi/ITBA-sprint-8" target="_blank">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" width="52" height="52">
+            </a></p>
+        </div>
+        
+
+        <div class="project">
+            <h3>Last Stand</h3>
+            <p>Juego de Nave averiada en el espacio.</p>
+            <video controls width="500">
+                <source src="videos/lastStandVideo.mp4" type="video/mp4">
+            </video>
+            <p><a href="https://github.com/Diego-Benitez/LAST-STAND" target="_blank">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" width="52" height="52">
+            </a></p>
+        </div>
+    </section>
+    
+
+
+    <section id="skills">
+        <h2>Habilidades</h2>
+        <ul>
+            <li><img src="iconos/c-sharp.png" alt="C#" class="skill-icon"></li>
+            <li><img src="iconos/net.png" alt=".Net" class="skill-icon"></li>
+            <li><img src="iconos/c-.png" alt="C++" class="skill-icon"></li>
+            <li><img src="iconos/sql-server.png" alt="SqlServer" class="skill-icon"></li>
+            <li><img src="iconos/git.png" alt="Git" class="skill-icon"></li>
+
+        </ul>
+    </section>
+
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Si quieres colaborar o necesitas ayuda con un proyecto, no dudes en contactarme.</p>
+        <form action="mailto:tuemail@example.com" method="post" enctype="text/plain">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Diego Benitez.</p>
+    </footer>
+
+
+    <script src="main.js"></script>
 </body>
 </html>
